@@ -24,9 +24,9 @@ Describe the programming language that you used and any libraries.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Django Complete Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django)
+* [Django and Bootstrap 5](https://www.w3schools.com/django/django_add_bootstrap5.php)
+* [Creating CRUD with django](https://python.plainenglish.io/building-a-basic-crud-using-django-b218d6859206)
 
 # Future Work
 
