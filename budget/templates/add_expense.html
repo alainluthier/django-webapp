@@ -1,0 +1,52 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div class="row justify-content-md-center">
+    <div class="col col-lg-6 col-sm-12">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="row mb-3 justify-content-md-center">
+                <h3 class="text-center mt-3 mb-3">Add Expense</h3>
+            </div>
+            <div class="row mb-3 justify-content-md-center">
+                <label for="created_at" class="col-sm-2 col-form-label">
+                    Date
+                </label>
+                <div class="col-sm-4">
+                    {{expense.created_at}}
+                </div>
+            </div>
+            <div class="row mb-3 justify-content-md-center">
+                <label for="amount" class="col-sm-2 col-form-label">
+                    Amount
+                </label>
+                <div class="col-sm-4">
+                    {{expense.amount}}
+                </div>
+            </div>
+            <div class="row mb-3 justify-content-md-center">
+                <label for="source" class="col-sm-2 col-form-label">
+                    Category
+                </label>
+                <div class="col-sm-4">
+                    {{expense.category}}
+                </div>
+            </div>
+            <div class="row mb-3 justify-content-md-center">
+                <label for="source" class="col-sm-2 col-form-label">
+                    Description
+                </label>
+                <div class="col-sm-4">
+                    {{expense.description}}
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-md-center">
+                <a class="col-sm-2 btn btn-danger" href="/budget/expenses">Cancel</a>
+                <div class="col-sm-2"></div>
+                <button type="submit" class="col-sm-2 btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

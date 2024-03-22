@@ -1,0 +1,36 @@
+{% extends "base_generic.html" %}
+{% block content %}
+        <div class="row mt-5">
+          <div class="col">
+            <h3>Expenses</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for expense in expenses %}  
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</td>
+                        <td>{{expense.created_at}}</td>
+                        <td>{{expense.amount}}</td>
+                        <td>{{expense.get_category_display}}</td>
+                        <td>{{expense.description}}</td>
+                        <td>
+                            <a href="/budget/expenses/update/{{ expense.id }}">Edit</a>  
+                            <a href="/budget/expenses/delete/{{ expense.id }}">Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}  
+                </tbody>
+            </table>
+            <center><a href="/budget/expenses/add" class="btn btn-primary">Add New Expense</a></center>  
+          </div>
+        </div>
+{% endblock %}

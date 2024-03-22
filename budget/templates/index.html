@@ -1,0 +1,43 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="row mt-5 mb-5">
+    <div class="col-sm-6">
+        <h3>Budget </h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="float_end">
+                    <h4 class="text-muted fw-normal mt-0">Incomes</h5>
+                    <h3 class="mt-3 mb-3">{{sum_incomes.amount__sum}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="float_end">
+                    <h4 class="text-muted fw-normal mt-0">Expenses</h5>
+                    <h3 class="mt-3 mb-3">{{sum_expenses.amount__sum}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="float_end">
+                    <h4 class="text-muted fw-normal mt-0">Balance</h5>
+                    <h3 class="mt-3 mb-3">{{balance}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
