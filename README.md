@@ -2,7 +2,7 @@
 
 I want to create a Personal Finance Manager web application. I will use Python and Django to record income, expenses, and categories. I will also use a SQLite database.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/Mtz9iEg2BXk)
 
 # Web Pages
 
